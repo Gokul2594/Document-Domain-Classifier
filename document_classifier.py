@@ -54,7 +54,7 @@ def pre_processing(raw_data):
     return( " ".join( meaningful_words ))   
 
 # function to train your data
-def train():
+def train_data():
 
     #Get the training data
     train = pd.read_csv("Path to your Train Data", header=0, delimiter="\t")
@@ -149,10 +149,10 @@ def bulk_test():
     # used try to run commands in both Windows and Linux Platform
     try:
         if not os.path.exists(ROOT_PATH + "\\" + pickle_files "\\train.pickle"):
-            train()
+            train_data()
     except:
         if not os.path.exists(ROOT_PATH + "/" + pickle_files "/train.pickle"):
-            train()
+            train_data()
 
     # used try to run commands in both Windows and Linux Platform
     try:
@@ -202,10 +202,10 @@ def single_input_test():
     # used try to run commands in both Windows and Linux Platform
     try:
         if not os.path.exists(ROOT_PATH + "\\" + pickle_files "\\train.pickle"):
-            train()
+            train_data()
     except:
         if not os.path.exists(ROOT_PATH + "/" + pickle_files "/train.pickle"):
-            train()
+            train_data()
     
     # used try to run commands in both Windows and Linux Platform
     try:
